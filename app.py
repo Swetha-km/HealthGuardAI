@@ -12,11 +12,6 @@ from PIL import Image
 # Load Environment Variables
 # ----------------------------
 load_dotenv()
-pytesseract.pytesseract.tesseract_cmd = os.getenv("TESSERACT_CMD")
-import pytesseract
-import os
-
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 app = Flask(__name__)
 
